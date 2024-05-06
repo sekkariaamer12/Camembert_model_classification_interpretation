@@ -17,3 +17,9 @@ Le modèle CamemBERT (transformer) est une architecture pré-entraînée similai
 
 Afin d'adapter notre modèle sur notre tache de classification (Transfert Learning)  on a ajouté un bloc de classification et puis on a entrainé notre modèle avec les données d'entrainement, l'évaluation avec les données d'évaluation et enfin on a testé notre modèle avec les données test en utilisant la matrice de confusion et les métriques d'évaluation suivantes : Accuracy, Recall et F1-score.
 
+# Interprétation du modèle Camembert par Captum : 
+Captum est une bibliothèque Python développée par Facebook AI Research qui facilite l’interprétabilité des modèles d’apprentissage automatique construits
+avec PyTorch. Elle fournit des outils et des techniques permettant d’attribuer l’importance ou la contribution des différentes caractéristiques d’entrée à la sortie
+d’un modèle en utilisant la méthode du gradient intégré. Dans le contexte de la classification en utilisant CamemBERT, le score d’attribution des jetons représente
+une évaluation de l’importance relative de chaque jeton dans la prédiction du modèle. Cela permet de comprendre quels mots ou phrases ont une influence sur
+la décision finale de notre modèle et d’expliquer ses prédictions.
